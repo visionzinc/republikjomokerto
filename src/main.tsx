@@ -1,7 +1,17 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { registerSW } from 'virtual:pwa-register';
 import App from './App.tsx';
 import './index.css';
+
+if ('serviceWorker' in navigator) {
+  registerSW({
+    immediate: true,
+    onRegisterError(error) {
+      console.warn('SW registration skipped/error:', error);
+    },
+  });
+}
 
 // Tier 1 Google Maps Platform quota defense (Demo Key)
 (window as unknown as { gm_authFailure?: () => void }).gm_authFailure = () => {

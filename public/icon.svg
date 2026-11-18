@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Republik Jomokerto">
+  <rect width="512" height="512" rx="112" fill="#0F5E46" />
+  <circle cx="256" cy="256" r="186" fill="none" stroke="#B8860B" stroke-width="14" />
+  <circle cx="256" cy="256" r="158" fill="#F8F7F4" />
+  <path d="M256 124 L298 188 L372 204 L320 258 L332 332 L256 296 L180 332 L192 258 L140 204 L214 188 Z" fill="#0F5E46" />
+  <circle cx="256" cy="246" r="34" fill="#B8860B" />
+  <text x="256" y="388" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="38" fill="#0F5E46" letter-spacing="4">JMK</text>
+</svg>

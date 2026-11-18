@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { LogOut, Menu, Shield, User, X } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import { PWAInstallButton } from './PWAInstallUI';
 import { ThemeSwitcher } from './ThemeSwitcher';
 
 export type AppPage =
@@ -69,9 +70,10 @@ export function Navbar({ activePage, onNavigate }: NavbarProps) {
           })}
         </nav>
 
-        {/* Zone 3: Theme Switcher + Primary Action */}
-        <div className="flex items-center gap-2.5 shrink-0">
-          <div className="hidden sm:flex">
+        {/* Zone 3: Install PWA + Theme Switcher + Primary Action */}
+        <div className="flex items-center gap-2 shrink-0">
+          <div className="hidden sm:flex items-center gap-2">
+            <PWAInstallButton variant="navbar" />
             <ThemeSwitcher />
           </div>
           {!citizen ? (
@@ -203,6 +205,9 @@ export function Navbar({ activePage, onNavigate }: NavbarProps) {
             <div className="mt-2 flex items-center justify-between border-t border-[#E4E2DC] px-3 pt-3">
               <span className="text-xs font-medium text-[#5B6561]">Tema Tampilan</span>
               <ThemeSwitcher showLabels />
+            </div>
+            <div className="px-3 pt-2">
+              <PWAInstallButton variant="menu" />
             </div>
           </div>
         </div>

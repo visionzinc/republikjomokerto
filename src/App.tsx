@@ -3,6 +3,7 @@ import { AuthProvider } from './context/AuthContext';
 import { ThemeProvider } from './context/ThemeContext';
 import { Navbar, type AppPage } from './components/Navbar';
 import { AppealBanner } from './components/AppealBanner';
+import { OfflineIndicator, PWAMobileBanner } from './components/PWAInstallUI';
 import { HomePage } from './pages/home';
 import { AuthPage } from './pages/auth';
 import { TimelinePage } from './pages/timeline';
@@ -137,6 +138,9 @@ function AppShell() {
           </div>
         </div>
       </footer>
+
+      <PWAMobileBanner />
+      <OfflineIndicator />
     </div>
   );
 }

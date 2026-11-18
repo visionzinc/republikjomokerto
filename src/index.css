@@ -1,0 +1,161 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-canvas: #F8F7F4;
+  --color-surface: #FFFFFF;
+  --color-ink: #1C2421;
+  --color-muted: #5B6561;
+  --color-border-hairline: #E4E2DC;
+  --color-republic: #0F5E46;
+  --color-republic-hover: #0B4A37;
+  --color-brass: #B8860B;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+  }
+
+  html.dark {
+    --color-canvas: #0E1412;
+    --color-surface: #151D1A;
+    --color-ink: #ECEBE6;
+    --color-muted: #9AA8A2;
+    --color-border-hairline: #26332E;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Subtle guilloche civic card pattern */
+.ktp-guilloche {
+  background-color: #F4F1EA;
+  color: #1C2421;
+  background-image:
+    radial-gradient(circle at 18% 22%, rgba(15, 94, 70, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 86% 78%, rgba(184, 134, 11, 0.11) 0%, transparent 48%),
+    repeating-linear-gradient(
+      45deg,
+      rgba(15, 94, 70, 0.025) 0px,
+      rgba(15, 94, 70, 0.025) 1px,
+      transparent 1px,
+      transparent 10px
+    );
+}
+
+html.dark .ktp-guilloche {
+  box-shadow: 0 14px 32px -14px rgba(0, 0, 0, 0.72);
+}
+
+/*
+ * Semantic Dark Theme Palette Mapping
+ * Keeps physical KTP card (.ktp-guilloche) and Google Maps InfoWindow (.gm-style) crisp.
+ */
+html.dark .bg-\[\#F8F7F4\]:not(.ktp-guilloche):not(.ktp-guilloche *):not(.gm-style *),
+html.dark .hover\:bg-\[\#F8F7F4\]:hover:not(.ktp-guilloche):not(.ktp-guilloche *),
+html.dark .bg-\[\#F4F1EA\]:not(.ktp-guilloche):not(.ktp-guilloche *) {
+  background-color: #1B2521;
+}
+
+html.dark .bg-\[\#F8F7F4\]\/95 {
+  background-color: rgba(14, 20, 18, 0.92);
+}
+
+html.dark .bg-\[\#F8F7F4\]\/40 {
+  background-color: rgba(14, 20, 18, 0.55);
+}
+
+html.dark .hover\:bg-\[\#F8F7F4\]\/60:hover {
+  background-color: rgba(27, 37, 33, 0.7);
+}
+
+html.dark .bg-white:not(.ktp-guilloche):not(.ktp-guilloche *):not(.gm-style *),
+html.dark .bg-white\/95:not(.ktp-guilloche):not(.ktp-guilloche *),
+html.dark .hover\:bg-white:hover:not(.ktp-guilloche):not(.ktp-guilloche *) {
+  background-color: #151D1A;
+}
+
+html.dark .text-\[\#1C2421\]:not(.ktp-guilloche):not(.ktp-guilloche *):not(.gm-style *),
+html.dark .hover\:text-\[\#1C2421\]:hover:not(.ktp-guilloche):not(.ktp-guilloche *) {
+  color: #ECEBE6;
+}
+
+html.dark .text-\[\#5B6561\]:not(.ktp-guilloche):not(.ktp-guilloche *):not(.gm-style *) {
+  color: #9AA8A2;
+}
+
+html.dark .text-\[\#0F5E46\]:not(.ktp-guilloche):not(.ktp-guilloche *):not(.gm-style *),
+html.dark .hover\:text-\[\#0F5E46\]:hover:not(.ktp-guilloche):not(.ktp-guilloche *) {
+  color: #34B88A;
+}
+
+html.dark .border-\[\#E4E2DC\]:not(.ktp-guilloche):not(.ktp-guilloche *),
+html.dark .divide-\[\#E4E2DC\]:not(.ktp-guilloche):not(.ktp-guilloche *) > :not(:last-child) {
+  border-color: #26332E;
+}
+
+html.dark .bg-red-50 {
+  background-color: rgba(127, 29, 29, 0.25);
+}
+
+html.dark .border-red-200 {
+  border-color: rgba(248, 113, 113, 0.35);
+}
+
+html.dark .text-red-800,
+html.dark .text-red-700 {
+  color: #FCA5A5;
+}
+
+html.dark .hover\:bg-red-50:hover {
+  background-color: rgba(127, 29, 29, 0.35);
+}
+
+html.dark .bg-emerald-50 {
+  background-color: rgba(15, 94, 70, 0.22);
+}
+
+html.dark .border-emerald-200 {
+  border-color: rgba(52, 184, 138, 0.35);
+}
+
+html.dark .text-emerald-900 {
+  color: #A7F3D0;
+}
+
+html.dark .bg-amber-50 {
+  background-color: rgba(146, 64, 14, 0.25);
+}
+
+html.dark .border-amber-200 {
+  border-color: rgba(251, 191, 36, 0.35);
+}
+
+html.dark .text-amber-900,
+html.dark .text-amber-950 {
+  color: #FDE68A;
+}
+
+html.dark input,
+html.dark textarea,
+html.dark select {
+  color: #ECEBE6;
+}
+
+html.dark ::placeholder {
+  color: #74837D;
+}
+

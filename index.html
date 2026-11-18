@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Republik Jomokerto — Portal Warga &amp; Kartu Tanda Penjomok</title>
+    <meta
+      name="description"
+      content="Portal komunitas hiburan Republik Jomokerto dengan Kartu Tanda Penjomok (KTP), link-in-bio, timeline teks dan gambar, chat real-time, peta hybrid Ngawi dan dunia game, serta asisten Gemini AI."
+    />
+    <meta property="og:title" content="Republik Jomokerto — Portal Warga &amp; Kartu Tanda Penjomok" />
+    <meta
+      property="og:description"
+      content="Cetak Kartu Tanda Penjomok (KTP), pasang pin di Ngawi atau Sumeru, bagikan momen, dan mengobrol bersama warga Republik Jomokerto."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var mode = localStorage.getItem('jomok_theme_mode') || 'system';
+          var isDark =
+            mode === 'dark' ||
+            (mode === 'system' &&
+              window.matchMedia &&
+              window.matchMedia('(prefers-color-scheme: dark)').matches);
+          var root = document.documentElement;
+          root.classList.toggle('dark', isDark);
+          root.dataset.theme = isDark ? 'dark' : 'light';
+          root.style.colorScheme = isDark ? 'dark' : 'light';
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F8F7F4] text-[#1C2421] dark:bg-[#0E1412] dark:text-[#ECEBE6] antialiased transition-colors duration-200 selection:bg-[#0F5E46]/20 selection:text-[#0F5E46] dark:selection:bg-[#34B88A]/25 dark:selection:text-[#34B88A]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

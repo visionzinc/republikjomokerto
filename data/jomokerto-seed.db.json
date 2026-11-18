@@ -1,0 +1,310 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "republic": "Republik Jomokerto",
+    "defaultLocation": "NGAWI"
+  },
+  "users": [
+    {
+      "id": "usr-superadmin-1",
+      "username": "presiden_jomok",
+      "email": "presiden@jomokerto.id",
+      "passwordHash": "4e1d0b22a1b4f512:762a5178962a3d919b14828311b6a65be5075f5b0d2c98089f8ad4b7fd5ad9781a73a32459b9ed4bfdf5e5cb8d5709878b2a666f69571ea164be3f7ea5e4120c",
+      "role": "superadmin",
+      "avatarUrl": "/src/assets/images/avatar_default_citizen_1795010738640.jpg",
+      "googleLinked": false,
+      "createdAt": "2026-11-01T08:00:00.000Z"
+    },
+    {
+      "id": "usr-admin-1",
+      "username": "menteri_ngawi",
+      "email": "menteri@jomokerto.id",
+      "passwordHash": "4e1d0b22a1b4f512:762a5178962a3d919b14828311b6a65be5075f5b0d2c98089f8ad4b7fd5ad9781a73a32459b9ed4bfdf5e5cb8d5709878b2a666f69571ea164be3f7ea5e4120c",
+      "role": "admin",
+      "avatarUrl": "/src/assets/images/avatar_default_citizen_1795010738640.jpg",
+      "googleLinked": false,
+      "createdAt": "2026-11-02T09:30:00.000Z"
+    },
+    {
+      "id": "usr-member-1",
+      "username": "nahida_ngawi",
+      "email": "nahida@sumeru.gg",
+      "passwordHash": "4e1d0b22a1b4f512:762a5178962a3d919b14828311b6a65be5075f5b0d2c98089f8ad4b7fd5ad9781a73a32459b9ed4bfdf5e5cb8d5709878b2a666f69571ea164be3f7ea5e4120c",
+      "role": "member",
+      "avatarUrl": "/src/assets/images/avatar_default_citizen_1795010738640.jpg",
+      "googleLinked": true,
+      "createdAt": "2026-11-05T11:15:00.000Z"
+    },
+    {
+      "id": "usr-member-2",
+      "username": "mas_rusdi_warnet",
+      "email": null,
+      "passwordHash": "4e1d0b22a1b4f512:762a5178962a3d919b14828311b6a65be5075f5b0d2c98089f8ad4b7fd5ad9781a73a32459b9ed4bfdf5e5cb8d5709878b2a666f69571ea164be3f7ea5e4120c",
+      "role": "member",
+      "avatarUrl": "/src/assets/images/avatar_default_citizen_1795010738640.jpg",
+      "googleLinked": false,
+      "createdAt": "2026-11-08T14:20:00.000Z"
+    },
+    {
+      "id": "usr-guest-1",
+      "username": "warga_pendatang",
+      "email": "pendatang@jomokerto.id",
+      "passwordHash": "4e1d0b22a1b4f512:762a5178962a3d919b14828311b6a65be5075f5b0d2c98089f8ad4b7fd5ad9781a73a32459b9ed4bfdf5e5cb8d5709878b2a666f69571ea164be3f7ea5e4120c",
+      "role": "guest",
+      "avatarUrl": "/src/assets/images/avatar_default_citizen_1795010738640.jpg",
+      "googleLinked": false,
+      "createdAt": "2026-11-12T17:40:00.000Z"
+    }
+  ],
+  "profiles_ktp": [
+    {
+      "userId": "usr-superadmin-1",
+      "ktpSerial": "JMK-NGW-2026-0001",
+      "fullName": "Bung Jomok Kartawijaya",
+      "title": "Presiden Sementara Seumur Hidup",
+      "locationType": "real",
+      "locationName": "NGAWI",
+      "faction": "Dewan Tertinggi Alun-Alun",
+      "motto": "Ngopi dulu di Ngawi, push rank kemudian.",
+      "bloodGroup": "O+",
+      "socialLinks": {
+        "instagram": "https://instagram.com/republikjomokerto",
+        "twitter": "https://x.com/jomokerto",
+        "github": "https://github.com/republik-jomokerto",
+        "website": "https://jomokerto.id"
+      },
+      "verifiedByAdmin": true,
+      "issuedAt": "2026-11-01T08:05:00.000Z"
+    },
+    {
+      "userId": "usr-admin-1",
+      "ktpSerial": "JMK-NGW-2026-0002",
+      "fullName": "Raden Slamet Santoso",
+      "title": "Menteri Urusan Kartu & Mabar",
+      "locationType": "real",
+      "locationName": "NGAWI SELATAN",
+      "faction": "Kementerian KTP Nasional",
+      "motto": "Tertib administrasi, anti AFK di ranked.",
+      "bloodGroup": "A+",
+      "socialLinks": {
+        "discord": "https://discord.gg/jomokerto",
+        "tiktok": "https://tiktok.com/@menteringawi"
+      },
+      "verifiedByAdmin": true,
+      "issuedAt": "2026-11-02T09:45:00.000Z"
+    },
+    {
+      "userId": "usr-member-1",
+      "ktpSerial": "JMK-SMR-2026-0003",
+      "fullName": "Kusanali Binti Ngawi",
+      "title": "Duta Besar Akademiya Sumeru",
+      "locationType": "fictional",
+      "locationName": "Sumeru — Genshin Impact",
+      "faction": "Akademiya Cabang Ngawi",
+      "motto": "Ilmu pengetahuan berawal dari es teh jumbo.",
+      "bloodGroup": "Dendro",
+      "socialLinks": {
+        "instagram": "https://instagram.com/sumeru_ngawi",
+        "youtube": "https://youtube.com/@akademiyangawi",
+        "twitter": "https://x.com/nahidangawi"
+      },
+      "verifiedByAdmin": true,
+      "issuedAt": "2026-11-05T11:30:00.000Z"
+    },
+    {
+      "userId": "usr-member-2",
+      "ktpSerial": "JMK-NGW-2026-0004",
+      "fullName": "Rusdi Pratama",
+      "title": "Penjaga Warnet Billing Malam",
+      "locationType": "fictional",
+      "locationName": "Inazuma — Sektor Warnet",
+      "faction": "Serikat Billing Paket Hemat",
+      "motto": "Koneksi stabil adalah hak segala bangsa.",
+      "bloodGroup": "B+",
+      "socialLinks": {
+        "tiktok": "https://tiktok.com/@warnetjomok",
+        "discord": "https://discord.gg/warnet-ngawi"
+      },
+      "verifiedByAdmin": false,
+      "issuedAt": "2026-11-08T14:35:00.000Z"
+    }
+  ],
+  "posts": [
+    {
+      "id": "post-101",
+      "authorId": "usr-superadmin-1",
+      "contentText": "Dekrit Resmi Hari Ini: Seluruh warga baru yang mendaftar berhak mencetak Kartu Tanda Penjomok (KTP) masing-masing setelah melengkapi data profil. Lokasi default kita tetap NGAWI, namun domisili fiktif seperti Sumeru atau Mondstadt sah secara konstitusi hiburan.",
+      "imageUrl": "/src/assets/images/hero_jomokerto_civic_1795010737788.jpg",
+      "imageMimeType": "image/jpeg",
+      "locationTag": "NGAWI",
+      "likesCount": 42,
+      "createdAt": "2026-11-17T09:00:00.000Z"
+    },
+    {
+      "id": "post-102",
+      "authorId": "usr-member-1",
+      "contentText": "Laporan diplomasi dari Sumeru Akademiya: rute ekspedisi kopi susu gula aren dari Ngawi ke Port Ormos sudah dipetakan di Atlas Dunia Fiktif. Jangan lupa sematkan tautan sosmed kalian di profil KTP!",
+      "imageUrl": "/src/assets/images/realm_atlas_bg_1795010739682.jpg",
+      "imageMimeType": "image/jpeg",
+      "locationTag": "Sumeru — Genshin Impact",
+      "likesCount": 27,
+      "createdAt": "2026-11-17T14:15:00.000Z"
+    },
+    {
+      "id": "post-103",
+      "authorId": "usr-admin-1",
+      "contentText": "Pengingat ramah untuk warga dengan status Guest: akun kalian sudah bisa dipakai membaca timeline dan menyapa di ruang chat. Kalau mau dapat nomor seri KTP dan link-in-bio resmi, lengkapi biodata di menu KTP Studio ya.",
+      "imageUrl": null,
+      "imageMimeType": null,
+      "locationTag": "NGAWI SELATAN",
+      "likesCount": 19,
+      "createdAt": "2026-11-18T02:10:00.000Z"
+    }
+  ],
+  "post_likes": [],
+  "chat_rooms": [
+    {
+      "id": "room-alun-alun",
+      "name": "Alun-Alun Ngawi",
+      "description": "Obrolan santai warga Republik Jomokerto lintas kota dan server.",
+      "type": "channel",
+      "realmTag": "NGAWI",
+      "participants": [],
+      "createdAt": "2026-11-01T08:00:00.000Z"
+    },
+    {
+      "id": "room-sumeru-tavern",
+      "name": "Kedai Kopi Sumeru",
+      "description": "Diskusi lore, build karakter, dan kumpul komunitas Genshin & RPG.",
+      "type": "channel",
+      "realmTag": "Sumeru — Genshin Impact",
+      "participants": [],
+      "createdAt": "2026-11-01T08:00:00.000Z"
+    },
+    {
+      "id": "room-lfg-mabar",
+      "name": "Posko Mabar & Warnet",
+      "description": "Cari party mabar malam ini tanpa drama AFK.",
+      "type": "channel",
+      "realmTag": "Multi-Realm",
+      "participants": [],
+      "createdAt": "2026-11-01T08:00:00.000Z"
+    }
+  ],
+  "chat_messages": [
+    {
+      "id": "msg-1",
+      "roomId": "room-alun-alun",
+      "senderId": "usr-superadmin-1",
+      "messageText": "Selamat datang di Balai Warga Republik Jomokerto. Sudah cetak KTP hari ini?",
+      "createdAt": "2026-11-18T04:10:00.000Z"
+    },
+    {
+      "id": "msg-2",
+      "roomId": "room-alun-alun",
+      "senderId": "usr-member-1",
+      "messageText": "Sudah Pak Presiden! Nomor seri JMK-SMR-2026-0003 aman terkendali dari Sumeru.",
+      "createdAt": "2026-11-18T04:12:00.000Z"
+    },
+    {
+      "id": "msg-3",
+      "roomId": "room-sumeru-tavern",
+      "senderId": "usr-member-2",
+      "messageText": "Ada yang butuh bantuan domain artifact malam ini? Paket billing masih sisa 3 jam.",
+      "createdAt": "2026-11-18T05:05:00.000Z"
+    }
+  ],
+  "map_pins": [
+    {
+      "id": "pin-real-1",
+      "authorId": "usr-superadmin-1",
+      "title": "Alun-Alun Merdeka Ngawi (Titik Nol Jomokerto)",
+      "description": "Markas besar kopdar mingguan warga Republik Jomokerto dan tempat deklarasi KTP perdana.",
+      "gameTag": "Kopdar Warga",
+      "mode": "real",
+      "lat": -7.4038,
+      "lng": 111.4461,
+      "realmId": null,
+      "realmX": null,
+      "realmY": null,
+      "placeUri": null,
+      "createdAt": "2026-11-10T08:00:00.000Z"
+    },
+    {
+      "id": "pin-real-2",
+      "authorId": "usr-admin-1",
+      "title": "Benteng Van Den Bosch (Pendem)",
+      "description": "Posko foto KTP estetik dan titik kumpul komunitas foto & lore sejarah.",
+      "gameTag": "Fotografi & Lore",
+      "mode": "real",
+      "lat": -7.3964,
+      "lng": 111.4547,
+      "realmId": null,
+      "realmX": null,
+      "realmY": null,
+      "placeUri": null,
+      "createdAt": "2026-11-11T10:00:00.000Z"
+    },
+    {
+      "id": "pin-real-3",
+      "authorId": "usr-member-2",
+      "title": "Kebun Teh Jamus Ngawi",
+      "description": "Lokasi healing setelah kalah beruntun di ranked.",
+      "gameTag": "Healing Zone",
+      "mode": "real",
+      "lat": -7.5147,
+      "lng": 111.2725,
+      "realmId": null,
+      "realmX": null,
+      "realmY": null,
+      "placeUri": null,
+      "createdAt": "2026-11-12T12:00:00.000Z"
+    },
+    {
+      "id": "pin-fic-1",
+      "authorId": "usr-superadmin-1",
+      "title": "Istana Negara Ngawi Prime",
+      "description": "Pusat pemerintahan Republik Jomokerto di Atlas Semesta Hiburan.",
+      "gameTag": "Civic Lore",
+      "mode": "fictional",
+      "lat": null,
+      "lng": null,
+      "realmId": "ngawi-prime",
+      "realmX": 34,
+      "realmY": 46,
+      "placeUri": null,
+      "createdAt": "2026-11-10T08:15:00.000Z"
+    },
+    {
+      "id": "pin-fic-2",
+      "authorId": "usr-member-1",
+      "title": "Kedai Puspa Akademiya Sumeru",
+      "description": "Titik mabar co-op Genshin Impact cabang Republik Jomokerto. Wajib bawa es teh.",
+      "gameTag": "Genshin Impact",
+      "mode": "fictional",
+      "lat": null,
+      "lng": null,
+      "realmId": "sumeru",
+      "realmX": 52,
+      "realmY": 28,
+      "placeUri": null,
+      "createdAt": "2026-11-13T09:00:00.000Z"
+    },
+    {
+      "id": "pin-fic-3",
+      "authorId": "usr-member-2",
+      "title": "Warnet Pelabuhan Inazuma",
+      "description": "Turnamen lokal setiap Sabtu malam dengan hadiah gelar KTP khusus.",
+      "gameTag": "Genshin Impact",
+      "mode": "fictional",
+      "lat": null,
+      "lng": null,
+      "realmId": "inazuma",
+      "realmX": 74,
+      "realmY": 64,
+      "placeUri": null,
+      "createdAt": "2026-11-14T15:00:00.000Z"
+    }
+  ],
+  "password_resets": []
+}

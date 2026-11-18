@@ -1,0 +1,6 @@
+{
+  "name": "Republik Jomokerto",
+  "description": "Portal komunitas hiburan Republik Jomokerto dengan Kartu Tanda Penjomok (KTP), link-in-bio, timeline teks dan gambar, chat real-time, peta hybrid Ngawi dan dunia game, serta asisten Gemini AI.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

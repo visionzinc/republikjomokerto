@@ -10,6 +10,25 @@ export default defineConfig(() => {
     plugins: [
       react(),
       tailwindcss(),
+      {
+        name: 'disable-hmr-client-ws',
+        apply: 'serve',
+        enforce: 'post',
+        transform(code: string, id: string) {
+          if (
+            process.env.DISABLE_HMR === 'true' &&
+            id.replace(/\\/g, '/').endsWith('vite/dist/client/client.mjs')
+          ) {
+            return {
+              code: code.replace(
+                /const transport = normalizeModuleRunnerTransport\(\(\(\) => \{[\s\S]*?\}\)\(\)\);/,
+                'const transport = normalizeModuleRunnerTransport({ connect() {}, disconnect() {}, send() {} });'
+              ),
+              map: null,
+            };
+          }
+        },
+      },
       VitePWA({
         registerType: 'autoUpdate',
         includeAssets: [
